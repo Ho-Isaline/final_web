@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sting</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body style="background-color: #FFD5D5;">
-    <!-- Header -->
-    <div class="container mt-3 text-center">
+    <header class="header">
         <h1><strong>Sting</strong></h1>
-    </div>
-    <div class="container text-center mt-4">
-        <img src="{{ url_for('static', filename='images/bunny.png') }}" alt="Bunny" style="width: 150px;">
-        <h3>Any Questions? <br> Click here to solve your questions</h3>
+    </header>
+
+
+    <div class="question-box">
+        <div class="question-text">
+            <div class="container text-center mt-4">
+                <h3>Any Questions? <br> Click here to solve your questions</h3>
+            </div>
+            <div class="question-image">
+                <img src="{{ url_for('static', filename='images/cat.png') }}" alt="Bunny" style="width: 150px;">
+            </div>
+        </div>
     </div>
     
 
@@ -46,10 +53,10 @@
                 <a href="#">Search</a>
             </div>
             <div class="col">
-                <a href="#">Library</a>
+                <a href="#">Record</a>
             </div>
             <div class="col">
-                <a href="#">Record</a>
+                <a href="#">account</a>
             </div>
         </div>
     </div>
