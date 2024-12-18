@@ -1,0 +1,36 @@
+/* 全局字體設定 */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* 卡片標題加粗 */
+.card-title {
+    font-weight: 600;
+}
+
+/* 小文字設為較細的字重 */
+.card-text {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.card {
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.fixed-bottom a {
+    color: #FF6B6B;
+    font-weight: bold;
+    text-decoration: none;
+}

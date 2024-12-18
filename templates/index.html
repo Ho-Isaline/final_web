@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sting</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-color: #FFD5D5;">
+    <!-- Header -->
+    <div class="container mt-3 text-center">
+        <h1><strong>Sting</strong></h1>
+    </div>
+    <div class="container text-center mt-4">
+        <img src="{{ url_for('static', filename='images/bunny.png') }}" alt="Bunny" style="width: 150px;">
+        <h3>Any Questions? <br> Click here to solve your questions</h3>
+    </div>
+    
+
+    <!-- New Releases -->
+    <div class="container">
+        <h3>New Releases Book</h3>
+        <div class="row">
+            {% for book in books %}
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="{{ book.image_url }}" class="card-img-top" alt="{{ book.title }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ book.title }}</h5>
+                        <p class="card-text">{{ book.author }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container fixed-bottom bg-white text-center">
+        <div class="row">
+            <div class="col">
+                <a href="#">Home</a>
+            </div>
+            <div class="col">
+                <a href="#">Search</a>
+            </div>
+            <div class="col">
+                <a href="#">Library</a>
+            </div>
+            <div class="col">
+                <a href="#">Record</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
